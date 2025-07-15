@@ -100,3 +100,19 @@ class AgendaMedica:
 
     def get_citas(self):
         return self.__citas
+    
+# Recordatorio
+class Recordatorio:
+    def __init__(self, id: str, mensaje: str):
+        self.__id = id
+        self.__mensaje = mensaje
+
+    def get_id(self):
+        return self.__id
+
+    def get_mensaje(self):
+        return self.__mensaje
+
+    @staticmethod
+    def enviar(paciente: Paciente, cita: Cita):
+        print(f"Recordatorio: {paciente.get_nombre()}, tienes una cita el {cita.get_fecha()}.")
