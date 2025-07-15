@@ -22,7 +22,7 @@ def cargarDatosDesdeJson(ruta_json: str, sistema: SistemaCitas):
             continue
         sistema.registrar_usuario(usuario)
         usuarios_map[u["id"]] = usuario
-        
+
     for c in datos["citas"]:
         paciente = usuarios_map.get(c["paciente_id"])
         medico = usuarios_map.get(c["medico_id"])
@@ -30,3 +30,9 @@ def cargarDatosDesdeJson(ruta_json: str, sistema: SistemaCitas):
         if paciente and medico:
             cita = Cita(c["id"], paciente, medico, fecha)
             sistema.agendar_cita(cita)
+    
+    for a in datos["atenciones"]:
+        paciente = usuarios_map.get(a["paciente_id"])
+        if paciente:
+            historial = HistorialClinico(a["historial_id"], paciente)
+            historial.agregar_nota(a["nota"])
