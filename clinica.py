@@ -20,3 +20,22 @@ class Usuario:
 
     def get_correo(self):
         return self.__correo
+    
+# Clase Paciente
+class Paciente(Usuario):
+    def __init__(self, id, nombre, correo, telefono):
+        super().__init__(id, nombre, correo)
+        self.__telefono = telefono
+        self.__citas: List[Cita] = []
+
+    def agregar_cita(self, cita):
+        self.__citas.append(cita)
+
+    def get_rol(self):
+        return "Paciente"
+    
+    def get_telefono(self):
+        return self.__telefono
+
+    def get_citas(self):
+        return self.__citas
