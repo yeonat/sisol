@@ -129,18 +129,19 @@ class Notificacion:
     def get_contenido(self):
         return self.__contenido
     
-# Notificación general
-class Notificacion:
-    def __init__(self, id: str, contenido: str):
+# Historial clínico
+class HistorialClinico:
+    def __init__(self, id: str, paciente: Paciente):
         self.__id = id
-        self.__contenido = contenido
+        self.__paciente = paciente
+        self.__notas: List[str] = []
 
-    def get_id(self):
-        return self.__id
-    
-    def get_contenido(self):
-        return self.__contenido
-    
+    def agregar_nota(self, texto: str):
+        self.__notas.append(texto)
+
+    def get_notas(self):
+        return self.__notas  
+
 # Estadística
 class Estadistica:
     def __init__(self, id: str, datos: dict):
@@ -152,3 +153,24 @@ class Estadistica:
 
     def mostrar_reporte(self):
         print(f"Reporte: {self.__datos}")
+
+# Sistema central de citas
+class SistemaCitas:
+    def __init__(self):
+        self.__usuarios: List[Usuario] = []
+        self.__citas: List[Cita] = []
+
+    def get_usuarios(self):
+        return self.__usuarios
+    
+    def get_citas(self):
+        return self.__citas
+
+    def registrar_usuario(self, usuario: Usuario):
+        self.__usuarios.append(usuario)
+
+    def agendar_cita(self, cita: Cita):
+        self.__citas.append(cita)
+        cita.get_paciente().agregar_cita(cita)
+        cita.get_medico().get_agenda().agregar_cita(cita)
+        Recordatorio.enviar(cita.get_paciente(), cita)
