@@ -65,3 +65,27 @@ class Administrador(Usuario):
 class Recepcionista(Usuario):
     def get_rol(self):
         return "Recepcionista"
+    
+# Cita médica
+# class Cita:
+#     def __init__(self, id: str, paciente: Paciente, medico: Medico, fecha: datetime):
+#         self.__id = id
+#         self.__paciente = paciente
+#         self.__medico = medico
+#         self.__fecha = fecha
+#         self.__estado = "Programada"
+
+#     def get_id(self):
+#         return self.__id
+
+#     def get_paciente(self):
+#         return self.__paciente
+
+#     def get_medico(self):
+#         return self.__medico
+
+#     def get_fecha(self):
+#         return self.__fecha
+
+#     def get_estado(self):
+#         return self.__estado
