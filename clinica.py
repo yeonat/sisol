@@ -41,20 +41,20 @@ class Paciente(Usuario):
         return self.__citas
     
 # Clase Medico
-# class Medico(Usuario):
-#     def __init__(self, id, nombre, correo, especialidad):
-#         super().__init__(id, nombre, correo)
-#         self.__especialidad = especialidad
-#         self.__agenda = AgendaMedica()
+class Medico(Usuario):
+    def __init__(self, id, nombre, correo, especialidad):
+        super().__init__(id, nombre, correo)
+        self.__especialidad = especialidad
+        self.__agenda = AgendaMedica()
 
-#     def get_rol(self):
-#         return "Medico"
+    def get_rol(self):
+        return "Medico"
     
-#     def get_especialidad(self):
-#         return self.__especialidad
+    def get_especialidad(self):
+        return self.__especialidad
     
-#     def get_agenda(self):
-#         return self.__agenda
+    def get_agenda(self):
+        return self.__agenda
 
 # Clase Administrador
 class Administrador(Usuario):
@@ -67,25 +67,36 @@ class Recepcionista(Usuario):
         return "Recepcionista"
     
 # Cita médica
-# class Cita:
-#     def __init__(self, id: str, paciente: Paciente, medico: Medico, fecha: datetime):
-#         self.__id = id
-#         self.__paciente = paciente
-#         self.__medico = medico
-#         self.__fecha = fecha
-#         self.__estado = "Programada"
+class Cita:
+    def __init__(self, id: str, paciente: Paciente, medico: Medico, fecha: datetime):
+        self.__id = id
+        self.__paciente = paciente
+        self.__medico = medico
+        self.__fecha = fecha
+        self.__estado = "Programada"
 
-#     def get_id(self):
-#         return self.__id
+    def get_id(self):
+        return self.__id
 
-#     def get_paciente(self):
-#         return self.__paciente
+    def get_paciente(self):
+        return self.__paciente
 
-#     def get_medico(self):
-#         return self.__medico
+    def get_medico(self):
+        return self.__medico
 
-#     def get_fecha(self):
-#         return self.__fecha
+    def get_fecha(self):
+        return self.__fecha
 
-#     def get_estado(self):
-#         return self.__estado
+    def get_estado(self):
+        return self.__estado
+
+# Agenda médica del médico
+class AgendaMedica:
+    def __init__(self):
+        self.__citas: List[Cita] = []
+
+    def agregar_cita(self, cita: Cita):
+        self.__citas.append(cita)
+
+    def get_citas(self):
+        return self.__citas
