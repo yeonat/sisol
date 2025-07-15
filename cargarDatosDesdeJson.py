@@ -38,3 +38,7 @@ def cargarDatosDesdeJson(ruta_json: str, sistema: SistemaCitas):
             historial.agregar_nota(a["nota"])
             print(f"Historial creado para {paciente.get_nombre()} con nota: {a['nota']}")
 
+# # Uso de la función:
+# if __name__ == "__main__":
+#     sistema = SistemaCitas()
+#     cargarDatosDesdeJson("datos_clinica.json", sistema)
