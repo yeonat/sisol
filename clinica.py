@@ -55,3 +55,13 @@ class Paciente(Usuario):
     
 #     def get_agenda(self):
 #         return self.__agenda
+
+# Clase Administrador
+class Administrador(Usuario):
+    def get_rol(self):
+        return "Administrador"
+
+# Clase Recepcionista
+class Recepcionista(Usuario):
+    def get_rol(self):
+        return "Recepcionista"
