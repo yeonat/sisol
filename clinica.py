@@ -116,3 +116,39 @@ class Recordatorio:
     @staticmethod
     def enviar(paciente: Paciente, cita: Cita):
         print(f"Recordatorio: {paciente.get_nombre()}, tienes una cita el {cita.get_fecha()}.")
+
+# Notificación general
+class Notificacion:
+    def __init__(self, id: str, contenido: str):
+        self.__id = id
+        self.__contenido = contenido
+
+    def get_id(self):
+        return self.__id
+    
+    def get_contenido(self):
+        return self.__contenido
+    
+# Notificación general
+class Notificacion:
+    def __init__(self, id: str, contenido: str):
+        self.__id = id
+        self.__contenido = contenido
+
+    def get_id(self):
+        return self.__id
+    
+    def get_contenido(self):
+        return self.__contenido
+    
+# Estadística
+class Estadistica:
+    def __init__(self, id: str, datos: dict):
+        self.__id = id
+        self.__datos = datos
+
+    def get_id(self):
+        return self.__id
+
+    def mostrar_reporte(self):
+        print(f"Reporte: {self.__datos}")
