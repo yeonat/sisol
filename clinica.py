@@ -39,3 +39,19 @@ class Paciente(Usuario):
 
     def get_citas(self):
         return self.__citas
+    
+# Clase Medico
+# class Medico(Usuario):
+#     def __init__(self, id, nombre, correo, especialidad):
+#         super().__init__(id, nombre, correo)
+#         self.__especialidad = especialidad
+#         self.__agenda = AgendaMedica()
+
+#     def get_rol(self):
+#         return "Medico"
+    
+#     def get_especialidad(self):
+#         return self.__especialidad
+    
+#     def get_agenda(self):
+#         return self.__agenda
