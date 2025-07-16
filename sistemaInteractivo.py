@@ -56,3 +56,46 @@ class SistemaInteractivo:
                 self.menu_usuario()
                 return
         print("Usuario no encontrado.")
+
+    def menu_usuario(self):
+        while self.__usuario_actual:
+            rol = self.__usuario_actual.get_rol()
+            print(f"\n--- Menú ({rol}) ---")
+            print("1. Gestión de Citas")
+            print("2. Visualizar Agenda")
+            if rol == "Medico":
+                print("3. Registrar Observaciones")
+            elif rol == "Administrador":
+                print("3. Ver Estadísticas")
+            print("0. Cerrar Sesión")
+
+            opcion = input("Seleccione una opción: ")
+
+            if opcion == "1":
+                self.gestionar_citas()
+            elif opcion == "2":
+                self.ver_agenda()
+            elif opcion == "3" and rol == "Medico":
+                self.registrar_observaciones()
+            elif opcion == "3" and rol == "Administrador":
+                self.ver_estadisticas()
+            elif opcion == "0":
+                print("Cerrando sesión...")
+                self.__usuario_actual = None
+                self.iniciar()
+            else:
+                print("Opción inválida.")
+
+    def gestionar_citas(self):
+        if isinstance(self.__usuario_actual, Paciente):
+            medico_id = input("Ingrese ID del médico: ")
+            fecha = input("Ingrese fecha de la cita (YYYY-MM-DD HH:MM): ")
+            medico = next((u for u in self.__sistema.get_usuarios() if isinstance(u, Medico) and u.get_id() == medico_id), None)
+            if medico:
+                cita = Cita(f"cita{len(self.__sistema.get_citas())+1}", self.__usuario_actual, medico, datetime.strptime(fecha, "%Y-%m-%d %H:%M"))
+                self.__sistema.agendar_cita(cita)
+                print("Cita agendada.")
+            else:
+                print("Médico no encontrado.")
+        else:
+            print("Solo los pacientes pueden agendar citas.")
