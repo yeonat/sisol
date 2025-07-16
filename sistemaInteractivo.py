@@ -99,3 +99,36 @@ class SistemaInteractivo:
                 print("Médico no encontrado.")
         else:
             print("Solo los pacientes pueden agendar citas.")
+
+
+    def ver_agenda(self):
+        if isinstance(self.__usuario_actual, Medico):
+            for cita in self.__usuario_actual.get_agenda().get_citas():
+                print(f"{cita.get_fecha()} - Paciente: {cita.get_paciente().get_nombre()}")
+        elif isinstance(self.__usuario_actual, Paciente):
+            for cita in self.__usuario_actual.get_citas():
+                print(f"{cita.get_fecha()} - Médico: {cita.get_medico().get_nombre()}")
+        else:
+            print("Sin agenda asociada.")
+
+    def registrar_observaciones(self):
+        paciente_id = input("ID del paciente: ")
+        nota = input("Ingrese observación: ")
+        paciente = next((u for u in self.__sistema.get_usuarios() if isinstance(u, Paciente) and u.get_id() == paciente_id), None)
+        if paciente:
+            historial = HistorialClinico(f"hist{paciente_id}", paciente)
+            historial.agregar_nota(nota)
+            print("Observación registrada.")
+        else:
+            print("Paciente no encontrado.")
+
+    def ver_estadisticas(self):
+        stats = Estadistica("1", {"total_usuarios": len(self.__sistema.get_usuarios()), "total_citas": len(self.__sistema.get_citas())})
+        stats.mostrar_reporte()
+
+# Ejecución del sistema
+if __name__ == "__main__":
+    sistema_citas = SistemaCitas()
+    cargarDatosDesdeJson("datos_clinica.json", sistema_citas)
+    app = SistemaInteractivo(sistema_citas)
+    app.iniciar()
