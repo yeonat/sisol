@@ -1,0 +1,778 @@
+{
+    "usuarios": [
+        {
+            "tipo": "Paciente",
+            "id": "P1",
+            "nombre": "Paciente1",
+            "correo": "paciente1@saludable.com",
+            "telefono": "3000000001"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P2",
+            "nombre": "Paciente2",
+            "correo": "paciente2@saludable.com",
+            "telefono": "3000000002"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P3",
+            "nombre": "Paciente3",
+            "correo": "paciente3@saludable.com",
+            "telefono": "3000000003"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P4",
+            "nombre": "Paciente4",
+            "correo": "paciente4@saludable.com",
+            "telefono": "3000000004"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P5",
+            "nombre": "Paciente5",
+            "correo": "paciente5@saludable.com",
+            "telefono": "3000000005"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P6",
+            "nombre": "Paciente6",
+            "correo": "paciente6@saludable.com",
+            "telefono": "3000000006"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P7",
+            "nombre": "Paciente7",
+            "correo": "paciente7@saludable.com",
+            "telefono": "3000000007"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P8",
+            "nombre": "Paciente8",
+            "correo": "paciente8@saludable.com",
+            "telefono": "3000000008"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P9",
+            "nombre": "Paciente9",
+            "correo": "paciente9@saludable.com",
+            "telefono": "3000000009"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P10",
+            "nombre": "Paciente10",
+            "correo": "paciente10@saludable.com",
+            "telefono": "3000000010"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P11",
+            "nombre": "Paciente11",
+            "correo": "paciente11@saludable.com",
+            "telefono": "3000000011"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P12",
+            "nombre": "Paciente12",
+            "correo": "paciente12@saludable.com",
+            "telefono": "3000000012"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P13",
+            "nombre": "Paciente13",
+            "correo": "paciente13@saludable.com",
+            "telefono": "3000000013"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P14",
+            "nombre": "Paciente14",
+            "correo": "paciente14@saludable.com",
+            "telefono": "3000000014"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P15",
+            "nombre": "Paciente15",
+            "correo": "paciente15@saludable.com",
+            "telefono": "3000000015"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P16",
+            "nombre": "Paciente16",
+            "correo": "paciente16@saludable.com",
+            "telefono": "3000000016"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P17",
+            "nombre": "Paciente17",
+            "correo": "paciente17@saludable.com",
+            "telefono": "3000000017"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P18",
+            "nombre": "Paciente18",
+            "correo": "paciente18@saludable.com",
+            "telefono": "3000000018"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P19",
+            "nombre": "Paciente19",
+            "correo": "paciente19@saludable.com",
+            "telefono": "3000000019"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P20",
+            "nombre": "Paciente20",
+            "correo": "paciente20@saludable.com",
+            "telefono": "3000000020"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P21",
+            "nombre": "Paciente21",
+            "correo": "paciente21@saludable.com",
+            "telefono": "3000000021"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P22",
+            "nombre": "Paciente22",
+            "correo": "paciente22@saludable.com",
+            "telefono": "3000000022"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P23",
+            "nombre": "Paciente23",
+            "correo": "paciente23@saludable.com",
+            "telefono": "3000000023"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P24",
+            "nombre": "Paciente24",
+            "correo": "paciente24@saludable.com",
+            "telefono": "3000000024"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P25",
+            "nombre": "Paciente25",
+            "correo": "paciente25@saludable.com",
+            "telefono": "3000000025"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P26",
+            "nombre": "Paciente26",
+            "correo": "paciente26@saludable.com",
+            "telefono": "3000000026"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P27",
+            "nombre": "Paciente27",
+            "correo": "paciente27@saludable.com",
+            "telefono": "3000000027"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P28",
+            "nombre": "Paciente28",
+            "correo": "paciente28@saludable.com",
+            "telefono": "3000000028"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P29",
+            "nombre": "Paciente29",
+            "correo": "paciente29@saludable.com",
+            "telefono": "3000000029"
+        },
+        {
+            "tipo": "Paciente",
+            "id": "P30",
+            "nombre": "Paciente30",
+            "correo": "paciente30@saludable.com",
+            "telefono": "3000000030"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M1",
+            "nombre": "Medico1",
+            "correo": "medico1@saludable.com",
+            "especialidad": "Ginecolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M2",
+            "nombre": "Medico2",
+            "correo": "medico2@saludable.com",
+            "especialidad": "Dermatolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M3",
+            "nombre": "Medico3",
+            "correo": "medico3@saludable.com",
+            "especialidad": "Pediatr\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M4",
+            "nombre": "Medico4",
+            "correo": "medico4@saludable.com",
+            "especialidad": "Dermatolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M5",
+            "nombre": "Medico5",
+            "correo": "medico5@saludable.com",
+            "especialidad": "Dermatolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M6",
+            "nombre": "Medico6",
+            "correo": "medico6@saludable.com",
+            "especialidad": "Cardiolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M7",
+            "nombre": "Medico7",
+            "correo": "medico7@saludable.com",
+            "especialidad": "Neurolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M8",
+            "nombre": "Medico8",
+            "correo": "medico8@saludable.com",
+            "especialidad": "Pediatr\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M9",
+            "nombre": "Medico9",
+            "correo": "medico9@saludable.com",
+            "especialidad": "Neurolog\u00eda"
+        },
+        {
+            "tipo": "Medico",
+            "id": "M10",
+            "nombre": "Medico10",
+            "correo": "medico10@saludable.com",
+            "especialidad": "Ginecolog\u00eda"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A1",
+            "nombre": "Admin1",
+            "correo": "admin1@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A2",
+            "nombre": "Admin2",
+            "correo": "admin2@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A3",
+            "nombre": "Admin3",
+            "correo": "admin3@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A4",
+            "nombre": "Admin4",
+            "correo": "admin4@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A5",
+            "nombre": "Admin5",
+            "correo": "admin5@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A6",
+            "nombre": "Admin6",
+            "correo": "admin6@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A7",
+            "nombre": "Admin7",
+            "correo": "admin7@saludable.com"
+        },
+        {
+            "tipo": "Administrador",
+            "id": "A8",
+            "nombre": "Admin8",
+            "correo": "admin8@saludable.com"
+        },
+        {
+            "tipo": "Recepcionista",
+            "id": "R1",
+            "nombre": "Recepcionista1",
+            "correo": "recepcionista1@saludable.com"
+        },
+        {
+            "tipo": "Recepcionista",
+            "id": "R2",
+            "nombre": "Recepcionista2",
+            "correo": "recepcionista2@saludable.com"
+        }
+    ],
+    "citas": [
+        {
+            "id": "C1",
+            "paciente_id": "P1",
+            "medico_id": "M10",
+            "fecha": "2025-07-16 01:37"
+        },
+        {
+            "id": "C2",
+            "paciente_id": "P2",
+            "medico_id": "M3",
+            "fecha": "2025-07-31 01:37"
+        },
+        {
+            "id": "C3",
+            "paciente_id": "P3",
+            "medico_id": "M2",
+            "fecha": "2025-07-20 01:37"
+        },
+        {
+            "id": "C4",
+            "paciente_id": "P4",
+            "medico_id": "M7",
+            "fecha": "2025-07-25 01:37"
+        },
+        {
+            "id": "C5",
+            "paciente_id": "P5",
+            "medico_id": "M9",
+            "fecha": "2025-07-22 01:37"
+        },
+        {
+            "id": "C6",
+            "paciente_id": "P6",
+            "medico_id": "M5",
+            "fecha": "2025-07-20 01:37"
+        },
+        {
+            "id": "C7",
+            "paciente_id": "P7",
+            "medico_id": "M9",
+            "fecha": "2025-07-21 01:37"
+        },
+        {
+            "id": "C8",
+            "paciente_id": "P8",
+            "medico_id": "M10",
+            "fecha": "2025-07-23 01:37"
+        },
+        {
+            "id": "C9",
+            "paciente_id": "P9",
+            "medico_id": "M2",
+            "fecha": "2025-08-08 01:37"
+        },
+        {
+            "id": "C10",
+            "paciente_id": "P10",
+            "medico_id": "M8",
+            "fecha": "2025-07-26 01:37"
+        },
+        {
+            "id": "C11",
+            "paciente_id": "P11",
+            "medico_id": "M9",
+            "fecha": "2025-08-05 01:37"
+        },
+        {
+            "id": "C12",
+            "paciente_id": "P12",
+            "medico_id": "M8",
+            "fecha": "2025-07-18 01:37"
+        },
+        {
+            "id": "C13",
+            "paciente_id": "P13",
+            "medico_id": "M5",
+            "fecha": "2025-07-23 01:37"
+        },
+        {
+            "id": "C14",
+            "paciente_id": "P14",
+            "medico_id": "M1",
+            "fecha": "2025-07-15 01:37"
+        },
+        {
+            "id": "C15",
+            "paciente_id": "P15",
+            "medico_id": "M2",
+            "fecha": "2025-07-24 01:37"
+        },
+        {
+            "id": "C16",
+            "paciente_id": "P16",
+            "medico_id": "M1",
+            "fecha": "2025-07-16 01:37"
+        },
+        {
+            "id": "C17",
+            "paciente_id": "P17",
+            "medico_id": "M10",
+            "fecha": "2025-08-13 01:37"
+        },
+        {
+            "id": "C18",
+            "paciente_id": "P18",
+            "medico_id": "M2",
+            "fecha": "2025-07-18 01:37"
+        },
+        {
+            "id": "C19",
+            "paciente_id": "P19",
+            "medico_id": "M2",
+            "fecha": "2025-07-24 01:37"
+        },
+        {
+            "id": "C20",
+            "paciente_id": "P20",
+            "medico_id": "M6",
+            "fecha": "2025-08-05 01:37"
+        },
+        {
+            "id": "C21",
+            "paciente_id": "P21",
+            "medico_id": "M2",
+            "fecha": "2025-08-12 01:37"
+        },
+        {
+            "id": "C22",
+            "paciente_id": "P22",
+            "medico_id": "M4",
+            "fecha": "2025-08-12 01:37"
+        },
+        {
+            "id": "C23",
+            "paciente_id": "P23",
+            "medico_id": "M5",
+            "fecha": "2025-07-24 01:37"
+        },
+        {
+            "id": "C24",
+            "paciente_id": "P24",
+            "medico_id": "M1",
+            "fecha": "2025-08-10 01:37"
+        },
+        {
+            "id": "C25",
+            "paciente_id": "P25",
+            "medico_id": "M9",
+            "fecha": "2025-08-05 01:37"
+        },
+        {
+            "id": "C26",
+            "paciente_id": "P26",
+            "medico_id": "M7",
+            "fecha": "2025-07-30 01:37"
+        },
+        {
+            "id": "C27",
+            "paciente_id": "P27",
+            "medico_id": "M6",
+            "fecha": "2025-08-06 01:37"
+        },
+        {
+            "id": "C28",
+            "paciente_id": "P28",
+            "medico_id": "M7",
+            "fecha": "2025-08-02 01:37"
+        },
+        {
+            "id": "C29",
+            "paciente_id": "P29",
+            "medico_id": "M6",
+            "fecha": "2025-07-18 01:37"
+        },
+        {
+            "id": "C30",
+            "paciente_id": "P30",
+            "medico_id": "M1",
+            "fecha": "2025-08-07 01:37"
+        }
+    ],
+    "atenciones": [
+        {
+            "historial_id": "H_M1_1",
+            "paciente_id": "P4",
+            "nota": "Observaci\u00f3n 1 para paciente P4 atendido por M1"
+        },
+        {
+            "historial_id": "H_M1_2",
+            "paciente_id": "P24",
+            "nota": "Observaci\u00f3n 2 para paciente P24 atendido por M1"
+        },
+        {
+            "historial_id": "H_M1_3",
+            "paciente_id": "P14",
+            "nota": "Observaci\u00f3n 3 para paciente P14 atendido por M1"
+        },
+        {
+            "historial_id": "H_M1_4",
+            "paciente_id": "P7",
+            "nota": "Observaci\u00f3n 4 para paciente P7 atendido por M1"
+        },
+        {
+            "historial_id": "H_M1_5",
+            "paciente_id": "P25",
+            "nota": "Observaci\u00f3n 5 para paciente P25 atendido por M1"
+        },
+        {
+            "historial_id": "H_M2_1",
+            "paciente_id": "P13",
+            "nota": "Observaci\u00f3n 1 para paciente P13 atendido por M2"
+        },
+        {
+            "historial_id": "H_M2_2",
+            "paciente_id": "P25",
+            "nota": "Observaci\u00f3n 2 para paciente P25 atendido por M2"
+        },
+        {
+            "historial_id": "H_M2_3",
+            "paciente_id": "P25",
+            "nota": "Observaci\u00f3n 3 para paciente P25 atendido por M2"
+        },
+        {
+            "historial_id": "H_M2_4",
+            "paciente_id": "P18",
+            "nota": "Observaci\u00f3n 4 para paciente P18 atendido por M2"
+        },
+        {
+            "historial_id": "H_M2_5",
+            "paciente_id": "P17",
+            "nota": "Observaci\u00f3n 5 para paciente P17 atendido por M2"
+        },
+        {
+            "historial_id": "H_M3_1",
+            "paciente_id": "P13",
+            "nota": "Observaci\u00f3n 1 para paciente P13 atendido por M3"
+        },
+        {
+            "historial_id": "H_M3_2",
+            "paciente_id": "P20",
+            "nota": "Observaci\u00f3n 2 para paciente P20 atendido por M3"
+        },
+        {
+            "historial_id": "H_M3_3",
+            "paciente_id": "P3",
+            "nota": "Observaci\u00f3n 3 para paciente P3 atendido por M3"
+        },
+        {
+            "historial_id": "H_M3_4",
+            "paciente_id": "P2",
+            "nota": "Observaci\u00f3n 4 para paciente P2 atendido por M3"
+        },
+        {
+            "historial_id": "H_M3_5",
+            "paciente_id": "P17",
+            "nota": "Observaci\u00f3n 5 para paciente P17 atendido por M3"
+        },
+        {
+            "historial_id": "H_M4_1",
+            "paciente_id": "P23",
+            "nota": "Observaci\u00f3n 1 para paciente P23 atendido por M4"
+        },
+        {
+            "historial_id": "H_M4_2",
+            "paciente_id": "P21",
+            "nota": "Observaci\u00f3n 2 para paciente P21 atendido por M4"
+        },
+        {
+            "historial_id": "H_M4_3",
+            "paciente_id": "P9",
+            "nota": "Observaci\u00f3n 3 para paciente P9 atendido por M4"
+        },
+        {
+            "historial_id": "H_M4_4",
+            "paciente_id": "P21",
+            "nota": "Observaci\u00f3n 4 para paciente P21 atendido por M4"
+        },
+        {
+            "historial_id": "H_M4_5",
+            "paciente_id": "P16",
+            "nota": "Observaci\u00f3n 5 para paciente P16 atendido por M4"
+        },
+        {
+            "historial_id": "H_M5_1",
+            "paciente_id": "P23",
+            "nota": "Observaci\u00f3n 1 para paciente P23 atendido por M5"
+        },
+        {
+            "historial_id": "H_M5_2",
+            "paciente_id": "P20",
+            "nota": "Observaci\u00f3n 2 para paciente P20 atendido por M5"
+        },
+        {
+            "historial_id": "H_M5_3",
+            "paciente_id": "P8",
+            "nota": "Observaci\u00f3n 3 para paciente P8 atendido por M5"
+        },
+        {
+            "historial_id": "H_M5_4",
+            "paciente_id": "P14",
+            "nota": "Observaci\u00f3n 4 para paciente P14 atendido por M5"
+        },
+        {
+            "historial_id": "H_M5_5",
+            "paciente_id": "P7",
+            "nota": "Observaci\u00f3n 5 para paciente P7 atendido por M5"
+        },
+        {
+            "historial_id": "H_M6_1",
+            "paciente_id": "P26",
+            "nota": "Observaci\u00f3n 1 para paciente P26 atendido por M6"
+        },
+        {
+            "historial_id": "H_M6_2",
+            "paciente_id": "P22",
+            "nota": "Observaci\u00f3n 2 para paciente P22 atendido por M6"
+        },
+        {
+            "historial_id": "H_M6_3",
+            "paciente_id": "P11",
+            "nota": "Observaci\u00f3n 3 para paciente P11 atendido por M6"
+        },
+        {
+            "historial_id": "H_M6_4",
+            "paciente_id": "P24",
+            "nota": "Observaci\u00f3n 4 para paciente P24 atendido por M6"
+        },
+        {
+            "historial_id": "H_M6_5",
+            "paciente_id": "P2",
+            "nota": "Observaci\u00f3n 5 para paciente P2 atendido por M6"
+        },
+        {
+            "historial_id": "H_M7_1",
+            "paciente_id": "P12",
+            "nota": "Observaci\u00f3n 1 para paciente P12 atendido por M7"
+        },
+        {
+            "historial_id": "H_M7_2",
+            "paciente_id": "P13",
+            "nota": "Observaci\u00f3n 2 para paciente P13 atendido por M7"
+        },
+        {
+            "historial_id": "H_M7_3",
+            "paciente_id": "P3",
+            "nota": "Observaci\u00f3n 3 para paciente P3 atendido por M7"
+        },
+        {
+            "historial_id": "H_M7_4",
+            "paciente_id": "P29",
+            "nota": "Observaci\u00f3n 4 para paciente P29 atendido por M7"
+        },
+        {
+            "historial_id": "H_M7_5",
+            "paciente_id": "P7",
+            "nota": "Observaci\u00f3n 5 para paciente P7 atendido por M7"
+        },
+        {
+            "historial_id": "H_M8_1",
+            "paciente_id": "P18",
+            "nota": "Observaci\u00f3n 1 para paciente P18 atendido por M8"
+        },
+        {
+            "historial_id": "H_M8_2",
+            "paciente_id": "P15",
+            "nota": "Observaci\u00f3n 2 para paciente P15 atendido por M8"
+        },
+        {
+            "historial_id": "H_M8_3",
+            "paciente_id": "P7",
+            "nota": "Observaci\u00f3n 3 para paciente P7 atendido por M8"
+        },
+        {
+            "historial_id": "H_M8_4",
+            "paciente_id": "P24",
+            "nota": "Observaci\u00f3n 4 para paciente P24 atendido por M8"
+        },
+        {
+            "historial_id": "H_M8_5",
+            "paciente_id": "P9",
+            "nota": "Observaci\u00f3n 5 para paciente P9 atendido por M8"
+        },
+        {
+            "historial_id": "H_M9_1",
+            "paciente_id": "P2",
+            "nota": "Observaci\u00f3n 1 para paciente P2 atendido por M9"
+        },
+        {
+            "historial_id": "H_M9_2",
+            "paciente_id": "P7",
+            "nota": "Observaci\u00f3n 2 para paciente P7 atendido por M9"
+        },
+        {
+            "historial_id": "H_M9_3",
+            "paciente_id": "P6",
+            "nota": "Observaci\u00f3n 3 para paciente P6 atendido por M9"
+        },
+        {
+            "historial_id": "H_M9_4",
+            "paciente_id": "P22",
+            "nota": "Observaci\u00f3n 4 para paciente P22 atendido por M9"
+        },
+        {
+            "historial_id": "H_M9_5",
+            "paciente_id": "P1",
+            "nota": "Observaci\u00f3n 5 para paciente P1 atendido por M9"
+        },
+        {
+            "historial_id": "H_M10_1",
+            "paciente_id": "P1",
+            "nota": "Observaci\u00f3n 1 para paciente P1 atendido por M10"
+        },
+        {
+            "historial_id": "H_M10_2",
+            "paciente_id": "P3",
+            "nota": "Observaci\u00f3n 2 para paciente P3 atendido por M10"
+        },
+        {
+            "historial_id": "H_M10_3",
+            "paciente_id": "P12",
+            "nota": "Observaci\u00f3n 3 para paciente P12 atendido por M10"
+        },
+        {
+            "historial_id": "H_M10_4",
+            "paciente_id": "P6",
+            "nota": "Observaci\u00f3n 4 para paciente P6 atendido por M10"
+        },
+        {
+            "historial_id": "H_M10_5",
+            "paciente_id": "P23",
+            "nota": "Observaci\u00f3n 5 para paciente P23 atendido por M10"
+        }
+    ]
+}

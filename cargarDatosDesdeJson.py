@@ -3,8 +3,18 @@ from datetime import datetime
 from clinica import SistemaCitas, Paciente, Medico, Administrador, Recepcionista, Cita, HistorialClinico
 
 def cargarDatosDesdeJson(ruta_json: str, sistema: SistemaCitas):
-    with open(ruta_json, "r") as f:
-        datos = json.load(f)
+    try:
+        with open(ruta_json, "r") as f:
+            datos = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: El archivo '{ruta_json}' no se encontró.")
+        return
+    except json.JSONDecodeError:
+        print(f"Error: No se pudo decodificar el archivo JSON '{ruta_json}'. Asegúrate de que sea un JSON válido.")
+        return
+    except Exception as e:
+        print(f"Ocurrió un error inesperado al leer el archivo: {e}")
+        return
 
     usuarios_map = {}
 
@@ -30,13 +40,16 @@ def cargarDatosDesdeJson(ruta_json: str, sistema: SistemaCitas):
         if paciente and medico:
             cita = Cita(c["id"], paciente, medico, fecha)
             sistema.agendar_cita(cita)
-    
+
     for a in datos["atenciones"]:
         paciente = usuarios_map.get(a["paciente_id"])
         if paciente:
             historial = HistorialClinico(a["historial_id"], paciente)
             historial.agregar_nota(a["nota"])
+            sistema.agregar_historial_clinico(historial)
             print(f"Historial creado para {paciente.get_nombre()} con nota: {a['nota']}")
+
+        
 
 # # Uso de la función:
 # if __name__ == "__main__":

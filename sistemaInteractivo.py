@@ -100,14 +100,13 @@ class SistemaInteractivo:
         else:
             print("Solo los pacientes pueden agendar citas.")
 
-
     def ver_agenda(self):
         if isinstance(self.__usuario_actual, Medico):
             for cita in self.__usuario_actual.get_agenda().get_citas():
                 print(f"{cita.get_fecha()} - Paciente: {cita.get_paciente().get_nombre()}")
         elif isinstance(self.__usuario_actual, Paciente):
             for cita in self.__usuario_actual.get_citas():
-                print(f"{cita.get_fecha()} - Médico: {cita.get_medico().get_nombre()}")
+                print(f"{cita.get_fecha()} - Médico: {cita.get_medico().get_nombre()} - Observaciones: {self.ver_observaciones(cita.get_paciente())}")
         else:
             print("Sin agenda asociada.")
 
@@ -116,11 +115,26 @@ class SistemaInteractivo:
         nota = input("Ingrese observación: ")
         paciente = next((u for u in self.__sistema.get_usuarios() if isinstance(u, Paciente) and u.get_id() == paciente_id), None)
         if paciente:
-            historial = HistorialClinico(f"hist{paciente_id}", paciente)
+            # Retrieve existing historial or create a new one
+            historial = self.__sistema.get_historial_clinico(paciente.get_id())
+            if not historial:
+                historial = HistorialClinico(f"hist_{paciente.get_id()}", paciente)
+                self.__sistema.agregar_historial_clinico(historial)
             historial.agregar_nota(nota)
             print("Observación registrada.")
         else:
             print("Paciente no encontrado.")
+
+    def ver_observaciones(self, paciente: Paciente):
+        if paciente:
+            historial = self.__sistema.get_historial_clinico(paciente.get_id())
+            if historial:
+                # Join all notes with a newline for better readability
+                return "\n".join(historial.get_notas()) 
+            else:
+                return "No hay observaciones registradas."
+        else:
+            return "Paciente no encontrado."
 
     def ver_estadisticas(self):
         stats = Estadistica("1", {"total_usuarios": len(self.__sistema.get_usuarios()), "total_citas": len(self.__sistema.get_citas())})
@@ -132,3 +146,4 @@ if __name__ == "__main__":
     cargarDatosDesdeJson("datos_clinica.json", sistema_citas)
     app = SistemaInteractivo(sistema_citas)
     app.iniciar()
+    

@@ -39,7 +39,7 @@ class Paciente(Usuario):
 
     def get_citas(self):
         return self.__citas
-    
+
 # Clase Medico
 class Medico(Usuario):
     def __init__(self, id, nombre, correo, especialidad):
@@ -55,17 +55,17 @@ class Medico(Usuario):
     
     def get_agenda(self):
         return self.__agenda
-
+    
 # Clase Administrador
 class Administrador(Usuario):
     def get_rol(self):
         return "Administrador"
-
+    
 # Clase Recepcionista
 class Recepcionista(Usuario):
     def get_rol(self):
         return "Recepcionista"
-    
+
 # Cita médica
 class Cita:
     def __init__(self, id: str, paciente: Paciente, medico: Medico, fecha: datetime):
@@ -100,7 +100,7 @@ class AgendaMedica:
 
     def get_citas(self):
         return self.__citas
-    
+
 # Recordatorio
 class Recordatorio:
     def __init__(self, id: str, mensaje: str):
@@ -128,7 +128,7 @@ class Notificacion:
     
     def get_contenido(self):
         return self.__contenido
-    
+
 # Historial clínico
 class HistorialClinico:
     def __init__(self, id: str, paciente: Paciente):
@@ -140,7 +140,13 @@ class HistorialClinico:
         self.__notas.append(texto)
 
     def get_notas(self):
-        return self.__notas  
+        return self.__notas   
+     
+    def get_paciente(self):
+        return self.__paciente
+    
+    def get_id(self):
+        return self.__id
 
 # Estadística
 class Estadistica:
@@ -159,12 +165,20 @@ class SistemaCitas:
     def __init__(self):
         self.__usuarios: List[Usuario] = []
         self.__citas: List[Cita] = []
+        self.__historiales_clinicos = {} # Add this line to store medical histories.
 
     def get_usuarios(self):
         return self.__usuarios
     
     def get_citas(self):
         return self.__citas
+    
+      # Add these lines to get and add medical histories.
+    def get_historial_clinico(self, paciente_id: str):
+        return self.__historiales_clinicos.get(paciente_id)
+
+    def agregar_historial_clinico(self, historial: HistorialClinico):
+            self.__historiales_clinicos[historial.get_paciente().get_id()] = historial
 
     def registrar_usuario(self, usuario: Usuario):
         self.__usuarios.append(usuario)
@@ -174,3 +188,4 @@ class SistemaCitas:
         cita.get_paciente().agregar_cita(cita)
         cita.get_medico().get_agenda().agregar_cita(cita)
         Recordatorio.enviar(cita.get_paciente(), cita)
+        
